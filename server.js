@@ -57,6 +57,7 @@ app.get('/', (req, res) => {
     service: 'dockbay-fullstack-ref-api',
     db: dbReady ? 'ok' : 'pending',
     hasDatabaseUrl: Boolean(DATABASE_URL),
+    pushTest: 'webhook-confirmed',
   });
 });
 
